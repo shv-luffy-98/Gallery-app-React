@@ -1,0 +1,19 @@
+.Pictures {
+    max-height: 400px;
+    overflow: auto;
+    box-shadow: 0 3px #ddd;
+    margin-bottom: 3px;
+}
+.Image {
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+}
+.Button {
+    box-sizing: border-box;
+    width: 180px;
+    height: 130px;
+    margin: 10px;
+    vertical-align: top;
+}

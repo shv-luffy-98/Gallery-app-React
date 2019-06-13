@@ -1,33 +1,61 @@
-.App {
+.Customize {
+  width: auto;
+  height: auto;
+  position: absolute;
+  transform: translate(-100%, -100%);
+  padding: 20px;
+  top: 100%;
+  left:100%;
+}
+
+.CustomizeButton {
+  padding: 8px 30px;
+  color: rgb(50, 121, 228);
+  border-radius: 15px;
+  background: #fff;
+  border: 0;
+  box-shadow: 1px 1px #888;
+}
+
+.BackgroundSelector {
+  background: #fff;
+  box-shadow: 0 0 13px #ddd;
+  border-radius: 8px;
+  width: 620px;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.backgroundSelectorHeader {
   text-align: center;
+  box-shadow: 0 3px #ddd;
+  margin-bottom: 3px;
+  padding: 10px
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.backgroundSelectorButtonDone, .backgroundSelectorButtonCancel {
+  border: 0;
+  margin: 15px;
+  border-radius: 3px;
+  padding: 5px;
+  width: 80px;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.backgroundSelectorButtonDone:enabled {
+  background-color: #1a72e6;
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundSelectorButtonCancel {
+  background-color: #f1f1f1;;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backgroundSelectorFooter {
+  text-align: right;
 }
