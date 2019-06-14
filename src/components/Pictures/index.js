@@ -17,7 +17,7 @@ export default ({ pictureLinks, changeBgsFlag, selected, changeSelected }) => {
     return (
         <div className="Pictures">
             {pictureLinks.map((item, index) => (
-                <img src={item} key={index} className="Image" onClick={() => pictureClick(index)} />
+                <img src={item} key={index} className={"Image" + ((selected == index) ? " active" : ((index == 0) ? " blackborder" : ""))} onClick={() => pictureClick(index)} />
             ))}
         </div>
     );

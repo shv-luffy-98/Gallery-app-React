@@ -9,6 +9,17 @@
     width: 200px;
     height: 150px;
     padding: 10px;
+    border: 1px solid transparent;
+}
+.Image.active {
+    border: 1px solid rgb(21, 106, 243);
+    background: #ddddff;
+}
+.Image.blackborder {
+    width: 180px;
+    height: 130px;
+    margin: 10px;
+    border: 1px solid #000;
 }
 .Button {
     box-sizing: border-box;

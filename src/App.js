@@ -8,21 +8,24 @@ function App() {
   let [selected, changeSelected] = useState(-1);
   let [curBackground, changeBackground] = useState("");
   let [pictureLinks, changeLinks] = useState([
-    "https://i.pinimg.com/originals/d5/4b/48/d54b483ffbafca30d37ba0515b12b9d3.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQDtHx6OXnefOHlNT-w0u473xuN8i8Pu_HH3D0FlzNQHg2Gwd",
-    "http://www.photobackgroundhd.com/wp-content/uploads/2018/08/Nature-Amazing-Images.jpg",
-    "https://i2.wp.com/sociallover.net/wp-content/uploads/2019/04/background-images-hd-1080p-free-download.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlxAVeQ2DrwVFE6FA4-eoU1oOjX0cBJNMptiEFbzhRr8eFawVcw",
-    "https://ak8.picdn.net/shutterstock/videos/5597768/thumb/9.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPUuWwbnMbAzdG378YYBHHVnRJKAFOeZXhqZV34mNhrYgIYTX",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdLAAUp2LcrTZZQslWRu63dsud7NdhWTxM2YHzHCX5EQ7db0M",
-    "https://store-images.s-microsoft.com/image/apps.27382.13510798886980861.0b318a10-241a-457e-8cf2-d1233ab81c52.e1c0ce9b-522f-43fc-a864-59040c96d43d",
-    "http://alena-vysotskaya.ru/images/300/DSC100304975.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuU8VaPulJD-52bs1DYfGR8LhHXwJYd567iI2naptdP8YuBR7M",
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+    "https://images.wallpaperscraft.com/image/forest_fog_trees_126479_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/pier_dock_sea_dusk_shore_118549_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/starry_sky_clouds_sunset_120716_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/tree_fog_nature_beautiful_84257_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/starry_sky_night_trees_night_landscape_118760_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/milky_way_august_sky_fir-trees_trees_night_45544_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/waterfall_grass_nature_shadow_92753_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/winter_snow_bench_tree_frost_track_cover_48029_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/sea_coast_rocks_underwater_world_vegetation_fish_53966_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/leaves_plant_green_118405_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/mountains_sky_fog_clouds_tops_84363_1920x1080.jpg",
     "http://www.photobackgroundhd.com/wp-content/uploads/2018/08/3D-Nature-Wallpapers.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuYDkRC1KIRnNGF06XNl973CVqrmB1Jw-kuuojrtfIhp2noUryw",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlm5VBONl8wQktOn37gvDI2HPKirStWqH4BuM1rfOvB6VQ6ZXzBQ",
-    "http://getwallpapers.com/wallpaper/full/b/c/9/706048-new-wallpaper-hd-1080p-1920x1080-for-phones.jpg"
+    "https://images.wallpaperscraft.com/image/fern_leaf_plant_green_119970_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/ng_gate_sun_tree_leaves_earth_emptiness_60174_1920x1080.jpg",
+    "http://getwallpapers.com/wallpaper/full/b/c/9/706048-new-wallpaper-hd-1080p-1920x1080-for-phones.jpg",
+    "https://images.wallpaperscraft.com/image/mountains_sunset_lake_sky_snow_peaks_93192_1920x1080.jpg",
+    "https://images.wallpaperscraft.com/image/switzerland_alps_mountains_night_beautiful_landscape_99817_1920x1080.jpg"
   ]);
 
   let changeBg = () => {
@@ -30,7 +33,7 @@ function App() {
     changeBackground(pictureLinks[selected]);
   }
   return (
-    <div className="App" style={{ backgroundImage: curBackground }}>
+    <div className="App" style={{ backgroundImage: "url(" + curBackground + ")" }}>
       <div className="Customize">
         <button className="CustomizeButton" onClick={() => changeFlag(true)}>Customize</button>
       </div>
